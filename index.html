@@ -242,6 +242,12 @@ Get a random number between 1 and
 <input id="howBig" value="">
 <input type="button" id="randomButton3" value="Go"> <span id="randomResult3"></span>
 <script>
+document.getElementById('randomButton2').onclick = function(){
+  result = Math.random()
+  result = result * howBig
+  result = Math.ceil(result)  // This rounds the number down
+  document.getElementById('randomResult2').textContent = result
+}
 // Can you figure out how to do this one?
 </script>
 
