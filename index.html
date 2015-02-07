@@ -244,7 +244,7 @@ Get a random number between 1 and
 <script>
 document.getElementById('randomButton2').onclick = function(){
   result = Math.random()
-  result = result * howBig
+  result = result * 'howBig'
   result = Math.ceil(result)  // This rounds the number down
   document.getElementById('randomResult2').textContent = result
 }
